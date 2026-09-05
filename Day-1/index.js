@@ -37,3 +37,18 @@
 //     return total;
 // }
 // console.log(sum([10,29,29,92,9]));
+
+
+//array
+
+// let arr = [10,91,101,202,13];
+// arr[1]=1000// upadte the array
+// console.log(arr[1]);
+
+
+// access the  the all elemnt in the array
+//  let arr = [10,10,201,10,193,10]
+// for(let i = 0; i <arr.length; i++){
+//     console.log(arr[i]);
+    
+// }
