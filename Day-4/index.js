@@ -27,19 +27,33 @@
 // console.log("second largest nuber is:", sclast);
 
 
-let num = 121;
+// let num = 121;
 
-let original = num;
+// let original = num;
+// let reverse = 0;
+
+// while (num > 0) {
+//     let lastDigit = num % 10;
+//     reverse = reverse * 10 + lastDigit;
+//     num = Math.floor(num / 10);
+// }
+
+// if (original === reverse) {
+//     console.log("Palindrome number");
+// } else {
+//     console.log("Not a palindrome number");
+// }
+
+let num = 113;
+let orignal = num;
 let reverse = 0;
-
-while (num > 0) {
+while(num > 0){
     let lastDigit = num % 10;
     reverse = reverse * 10 + lastDigit;
     num = Math.floor(num / 10);
-}
-
-if (original === reverse) {
+}if(orignal === reverse){
     console.log("Palindrome number");
-} else {
-    console.log("Not a palindrome number");
+
+}else{
+    console.log("Not a palindome nummber");
 }
