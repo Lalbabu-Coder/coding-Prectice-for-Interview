@@ -44,16 +44,16 @@
 //     console.log("Not a palindrome number");
 // }
 
-let num = 113;
-let orignal = num;
-let reverse = 0;
-while(num > 0){
-    let lastDigit = num % 10;
-    reverse = reverse * 10 + lastDigit;
-    num = Math.floor(num / 10);
-}if(orignal === reverse){
-    console.log("Palindrome number");
+// let num = 113;
+// let orignal = num;
+// let reverse = 0;
+// while(num > 0){
+//     let lastDigit = num % 10;
+//     reverse = reverse * 10 + lastDigit;
+//     num = Math.floor(num / 10);
+// }if(orignal === reverse){
+//     console.log("Palindrome number");
 
-}else{
-    console.log("Not a palindome nummber");
-}
+// }else{
+//     console.log("Not a palindome nummber");
+// }
