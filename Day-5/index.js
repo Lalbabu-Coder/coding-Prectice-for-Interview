@@ -25,17 +25,29 @@
 // console.log("second larget number is:", sclast);
 
 // The third question is to find the second smallest number in an array
-let arr = [10,30,40,50,70];
-let min = Infinity;
-let scMin = Infinity-1;
-for(let i = 0 ; i < arr.length; i++){
-    if(arr[i] < min){
-        scMin = min;
-        min = arr[i];
+// let arr = [10,30,40,50,70];
+// let min = Infinity;
+// let scMin = Infinity-1;
+// for(let i = 0 ; i < arr.length; i++){
+//     if(arr[i] < min){
+//         scMin = min;
+//         min = arr[i];
 
-    }else if(arr[i] < scMin && arr[i] !== min){
-        scMin = arr[i];
+//     }else if(arr[i] < scMin && arr[i] !== min){
+//         scMin = arr[i];
+
+//     }
+// }
+// console.log("Second smallest number is:", scMin);
+
+// The fourth question is to find the largest number in an array 
+
+let arr = [10,30,40,50,70];
+let max = 0;
+for(let i = 0; i < arr.length; i++){
+    if(arr[i] > max){
+        max = arr[i];
 
     }
 }
-console.log("Second smallest number is:", scMin);
+console.log("Largest number is:", max)
