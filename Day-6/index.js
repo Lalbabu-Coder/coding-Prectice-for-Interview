@@ -32,3 +32,12 @@
 // console.log("Reversed string is: " + reversedStr);
 
 
+// // 5. Remove duplicates from an array
+// let arr = [1,2,3,4,5,1,2,3];
+// let uniqueArr = [];
+// for(let i = 0; i < arr.length; i++){
+//   if(uniqueArr.indexOf(arr[i]) === -1){
+//     uniqueArr.push(arr[i]);
+//   }
+// }
+// console.log("Array after removing dublicates: " , uniqueArr);
