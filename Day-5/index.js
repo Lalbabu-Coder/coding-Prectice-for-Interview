@@ -54,14 +54,14 @@
 
 //  check the palindrome number or not 
 
-let num = 12213;
-let temp = num;
-let rev = 0;
-while(num > 0){
-    let rem = num % 10;
-    rev = rev * 10 + rem;
-    num = Math.floor(num / 10);
+// let num = 12213;
+// let temp = num;
+// let rev = 0;
+// while(num > 0){
+//     let rem = num % 10;
+//     rev = rev * 10 + rem;
+//     num = Math.floor(num / 10);
 
-}if(temp === rev){
-    console.log("The number is palindrome")
-}else{console.log("The number is not Palindrome")}
+// }if(temp === rev){
+//     console.log("The number is palindrome")
+// }else{console.log("The number is not Palindrome")}
