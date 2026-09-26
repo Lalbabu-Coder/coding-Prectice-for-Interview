@@ -13,11 +13,22 @@
 //  }
 
 //  swape the two numbers using third variable
- let a = 5;
- let b = 10;
- let temp;
- temp = a ;
-   a=b;
-   b = temp;
-   console.log("after swapping a = " + a);
-   console.log("after swapping b = " +b);
+//  let a = 5;
+//  let b = 10;
+//  let temp;
+//  temp = a ;
+//    a=b;
+//    b = temp;
+//    console.log("after swapping a = " + a);
+//    console.log("after swapping b = " +b);
+
+//  Reverse a string
+// let str = "Hello World";
+// let reversedStr = "";
+// for (let i = str.length -1; i >= 0; i--){
+//     reversedStr += str[i];
+
+// } 
+// console.log("Reversed string is: " + reversedStr);
+
+
