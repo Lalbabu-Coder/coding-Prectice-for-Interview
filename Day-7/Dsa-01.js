@@ -60,7 +60,6 @@
 // while(left<right){
 //     if(str[left] !== str[right]){
 //         return  false;
-        
 //     }
 //     left ++;
 //     right --;
@@ -69,3 +68,20 @@
 // }
 
 // console.log(isPalindrom("madamm"));
+
+//Given a str and check palindrom using two pointer
+
+function isPalindrom(str){
+    let  left = 0;
+    let right = str.length-1;
+    while(left<right){
+        if(str[left] !== str[right]){
+            return false;
+        }
+       left ++;
+       right--;
+    }
+  return true;
+}
+console.log(isPalindrom("madam"))
+console.log(isPalindrom("hih"))
