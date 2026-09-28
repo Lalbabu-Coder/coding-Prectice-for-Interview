@@ -71,17 +71,30 @@
 
 //Given a str and check palindrom using two pointer
 
-function isPalindrom(str){
-    let  left = 0;
-    let right = str.length-1;
-    while(left<right){
-        if(str[left] !== str[right]){
-            return false;
-        }
-       left ++;
-       right--;
-    }
-  return true;
+// function isPalindrom(str){
+//     let  left = 0;
+//     let right = str.length-1;
+//     while(left<right){
+//         if(str[left] !== str[right]){
+//             return false;
+//         }
+//        left ++;
+//        right--;
+//     }
+//   return true;
+// }
+// console.log(isPalindrom("madam"))
+// console.log(isPalindrom("hih"))
+
+// Given a array  and reverse the value  solve the problem using Two pointer
+
+let arr = [1,2,3,4,5]
+let left=0;
+let right=arr.length-1;
+
+while(left<right){
+    [arr[left], arr[right]] = [arr[right],arr[left]];
+    left++;
+    right--;
 }
-console.log(isPalindrom("madam"))
-console.log(isPalindrom("hih"))
+console.log(arr)
