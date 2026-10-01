@@ -29,3 +29,18 @@
 //     }
 // }
 // console.log(max)
+
+// find the second max element in the given array
+let arr = [10,10,20,1001,20];
+let max = 0;
+let scmax = Infinity;
+for(let i = 0 ; i < arr.length; i++){
+    if(arr[i] > max){
+        scmax =  max;
+        max = arr[i];
+
+    }else if(arr[i] > scmax && arr[i] != max){
+        scmax= arr[i];
+    }
+}
+console.log(scmax);
