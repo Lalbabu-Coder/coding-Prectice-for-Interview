@@ -14,3 +14,7 @@
 //     return total;
 // }
 // console.log(sum([10,20,30,40,50]));
+
+let arr = [10,20,30,40,50];
+arr[1]=80
+console.log(arr[1])
