@@ -15,6 +15,17 @@
 // }
 // console.log(sum([10,20,30,40,50]));
 
-let arr = [10,20,30,40,50];
-arr[1]=80
-console.log(arr[1])
+// let arr = [10,20,30,40,50];
+// arr[1]=80
+// console.log(arr[1])
+
+
+//Find the max element in the given array
+// let arr = [10,10,20,1001,20];
+// let max = 0;
+// for(let i = 0; i< arr.length; i++){
+//     if(arr[i] > max){
+//         max = arr[i];
+//     }
+// }
+// console.log(max)
