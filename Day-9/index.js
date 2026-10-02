@@ -66,3 +66,24 @@ console.log(scmax);
     
 // }
 // console.log(sum([10,20,19,10,19]));
+
+
+
+// function sum(arr){
+//     let total = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         total += arr[i];
+//     }
+//     return total;
+// }
+
+// console.log(sum([10,20,30,10]));
+
+// function sum(arr){
+//   let total = 0;
+//   for(let i = 0; i < arr.length ; i ++){
+//     total += arr[i];
+//   }
+//     return total;
+// }
+// console.log(sum([10,29,29,92,9]));
