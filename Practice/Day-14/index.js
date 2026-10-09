@@ -77,3 +77,25 @@
 //     backtrack(0, target, []);
 //     return result;
 // };
+
+//Optimized version (sort + break)
+var combinationSum = function (candidates, target) {
+    const result = [];
+    candidates.sort((a, b) => a - b);
+
+    function backtrack(start, remaining, path) {
+        if (remaining === 0) {
+            result.push([...path]);
+            return;
+        }
+        for (let i = start; i < candidates.length; i++) {
+            if (candidates[i] > remaining) break; // sorted, so stop early
+            path.push(candidates[i]);
+            backtrack(i, remaining - candidates[i], path);
+            path.pop();
+        }
+    }
+
+    backtrack(0, target, []);
+    return result;
+};
