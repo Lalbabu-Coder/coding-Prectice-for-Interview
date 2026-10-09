@@ -36,3 +36,20 @@
 // Passing start prevents permutations of the same combination (e.g., [2,3] and [3,2]).
 // Prune when the remaining target goes below 0
 
+// Dry Run 
+
+// backtrack(0, 7, [])
+// ├─ pick 2 → backtrack(0, 5, [2])
+// │   ├─ pick 2 → backtrack(0, 3, [2,2])
+// │   │   ├─ pick 2 → backtrack(0, 1, [2,2,2])
+// │   │   │   └─ 2>1, 3>1, 6>1, 7>1 → sab skip, return
+// │   │   ├─ pick 3 → backtrack(1, 0, [2,2,3])  ✅ remaining=0 → save [2,2,3]
+// │   │   └─ 6>3, 7>3 → skip
+// │   ├─ pick 3 → backtrack(1, 2, [2,3])
+// │   │   └─ 3>2, 6>2, 7>2 → skip
+// │   └─ 6>5, 7>5 → skip
+// ├─ pick 3 → backtrack(1, 4, [3])
+// │   └─ 3>4? No → pick 3 → backtrack(1, 1, [3,3]) → sab > 1, return
+// │      6>4, 7>4 → skip
+// ├─ pick 6 → backtrack(2, 1, [6]) → 6>1, 7>1 → skip
+// └─ pick 7 → backtrack(3, 0, [7])  ✅ remaining=0 → save [7]
