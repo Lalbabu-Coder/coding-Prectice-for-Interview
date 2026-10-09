@@ -53,3 +53,27 @@
 // │      6>4, 7>4 → skip
 // ├─ pick 6 → backtrack(2, 1, [6]) → 6>1, 7>1 → skip
 // └─ pick 7 → backtrack(3, 0, [7])  ✅ remaining=0 → save [7]
+
+
+// code 
+// var combinationSum = function (candidates, target) {
+//     const result = [];
+
+//     function backtrack(start, remaining, path) {
+//         if (remaining === 0) {
+//             result.push([...path]);
+//             return;
+//         }
+
+//         for (let i = start; i < candidates.length; i++) {
+//             if (candidates[i] > remaining) continue; // prune
+
+//             path.push(candidates[i]);
+//             backtrack(i, remaining - candidates[i], path); // i, not i+1 → reuse allowed
+//             path.pop(); // undo choice
+//         }
+//     }
+
+//     backtrack(0, target, []);
+//     return result;
+// };
