@@ -34,3 +34,17 @@
 //   return max;
 // }
 // console.log(largest([10,30,40,30]));
+
+// remove dublicate from given array;
+
+function removeDuplicate(arr){
+  let unique=[];
+  for(let i = 0; i < arr.length; i++){
+    if( ! unique.includes(arr[i])){
+      unique.push(arr[i]);
+    }
+
+  }
+  return unique;
+}
+console.log(removeDuplicate([10,20,20,10,40,90,100]))
