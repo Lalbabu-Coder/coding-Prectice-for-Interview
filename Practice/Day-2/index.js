@@ -61,11 +61,23 @@
     
 // }
 
-function num(arr){
-    let total = 0;
-    for(let i =0; i < arr.length; i++){
-        total += arr[i];
+// function num(arr){
+//     let total = '';
+//     for(let i = arr.length-1; i>=0; i--){
+//         total += arr[i];
+//     }
+//     return total;
+// }
+// console.log(num('hello'));
+
+
+// reverse  the string
+function num (str){
+    let reverse = '';
+    for(let i = str.length-1; i >= 0; i--){
+        reverse += str[i];
+
     }
-    return total;
+    return  reverse; 
 }
-console.log(num([10,39,29]));
+console.log(num('hello'));
