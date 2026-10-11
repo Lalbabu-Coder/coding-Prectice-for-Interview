@@ -37,14 +37,26 @@
 
 // remove dublicate from given array;
 
-function removeDuplicate(arr){
-  let unique=[];
-  for(let i = 0; i < arr.length; i++){
-    if( ! unique.includes(arr[i])){
-      unique.push(arr[i]);
-    }
+// function removeDuplicate(arr){
+//   let unique=[];
+//   for(let i = 0; i < arr.length; i++){
+//     if( ! unique.includes(arr[i])){
+//       unique.push(arr[i]);
+//     }
 
-  }
-  return unique;
-}
-console.log(removeDuplicate([10,20,20,10,40,90,100]))
+//   }
+//   return unique;
+// }
+// console.log(removeDuplicate([10,20,20,10,40,90,100]))
+
+//Remove duplicates from an array
+// function removeDuplicates(arr){
+//   let unique=[];
+//   for(let i =0 ; i < arr.length; i++){
+//     if(! unique.includes(arr[i])){
+//       unique.push(arr[i]);
+//     }
+//   }
+//   return unique;
+// }
+// console.log(removeDuplicates([10,10,20,30,30,20,40,50,40,50]))
