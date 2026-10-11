@@ -79,11 +79,27 @@
 // console.log(sclargest([10,39,49,292,494,29]));
 
 // reverse the given str
-function reverseString(str){
-  let newStr='';
-  for(let i = str.length-1; i >= 0; i--){
-    newStr += str[i];
+// function reverseString(str){
+//   let newStr='';
+//   for(let i = str.length-1; i >= 0; i--){
+//     newStr += str[i];
+//   }
+//   return newStr;
+// }
+// console.log(reverseString('hello'));
+
+// check the given str is palindrome or not 
+function palindrome(str){
+  left =0; 
+  right = str.length-1;
+  while(left < right){
+    if(str[left ] !== str[right]){
+      return false;
+    }
+    left ++;
+    right --;
   }
-  return newStr;
+  return true;
+
 }
-console.log(reverseString('hello'));
+console.log(palindrome('madamm'));
