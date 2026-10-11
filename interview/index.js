@@ -60,3 +60,20 @@
 //   return unique;
 // }
 // console.log(removeDuplicates([10,10,20,30,30,20,40,50,40,50]))
+
+//find the second Largest number in the given array 
+function sclargest(arr){
+  let max = 0;
+  let secondMax = Infinity;
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > max ){
+      secondMax  = max;
+      max = arr[i];
+    }
+    else if(arr[i] > secondMax && arr[i] !== max){
+      secondMax=arr[i];
+    }
+  }
+  return secondMax;
+}
+console.log(sclargest([10,39,49,292,494,29]));
