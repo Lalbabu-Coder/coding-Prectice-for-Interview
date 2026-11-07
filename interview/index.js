@@ -89,17 +89,23 @@
 // console.log(reverseString('hello'));
 
 // check the given str is palindrome or not 
-function palindrome(str){
-  left =0; 
-  right = str.length-1;
-  while(left < right){
-    if(str[left ] !== str[right]){
-      return false;
-    }
-    left ++;
-    right --;
-  }
-  return true;
+// function palindrome(str){
+//   left =0; 
+//   right = str.length-1;
+//   while(left < right){
+//     if(str[left ] !== str[right]){
+//       return false;
+//     }
+//     left ++;
+//     right --;
+//   }
+//   return true;
 
+// }
+// console.log(palindrome('madamm'));
+
+function fact(n){
+    if(n <= 1) return 1;
+    return n * fact(n-1)
 }
-console.log(palindrome('madamm'));
+console.log(fact(5))
