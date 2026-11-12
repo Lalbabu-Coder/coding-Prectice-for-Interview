@@ -31,13 +31,24 @@
 
 //remove the duplicates value from th array
 
-function removeDuplicates(arr){
-    let uniqueArr = [];
+// function removeDuplicates(arr){
+//     let uniqueArr = [];
+//     for(let i = 0; i < arr.length; i++){
+//         if(uniqueArr.indexOf(arr[i]) === -1){
+//             uniqueArr.push(arr[i]);
+//         }
+//     }
+//     return uniqueArr;
+// }
+// console.log(removeDuplicates([1,2,3,4,5,6,7,8,9,10,1,2,3,4,5]));
+
+// find the sum of all the elements in the array
+
+function sumOfArray(arr){
+    let sum = 0;
     for(let i = 0; i < arr.length; i++){
-        if(uniqueArr.indexOf(arr[i]) === -1){
-            uniqueArr.push(arr[i]);
-        }
+        sum += arr[i];
     }
-    return uniqueArr;
+    return sum;
 }
-console.log(removeDuplicates([1,2,3,4,5,6,7,8,9,10,1,2,3,4,5]));
+console.log(sumOfArray([1,2,3,4,45,5,6,768]));
