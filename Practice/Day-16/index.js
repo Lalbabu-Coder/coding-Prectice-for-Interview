@@ -38,17 +38,32 @@
 // console.log(sumOfArray([10,394,5056,6706,1000,1]));
 
 // check the palindrome number
-function isPalindrome(num){
-    let orignal = num;
-    let reversed = 0;
-    while(num > 0){
-        let digit = num % 10;
-        reversed = reversed * 10 + digit;
-        num = Math.floor(num / 10);
-    }  
-    if(orignal === reversed){
-        return true;
+// function isPalindrome(num){
+//     let orignal = num;
+//     let reversed = 0;
+//     while(num > 0){
+//         let digit = num % 10;
+//         reversed = reversed * 10 + digit;
+//         num = Math.floor(num / 10);
+//     }  
+//     if(orignal === reversed){
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(isPalindrome(1210));
+
+// check the prime number 
+function isPrime(num){
+    if(num <=1){
+        return false;
     }
-    return false;
+        for(let i = 2; i <= Math.sqrt(num); i++){
+            if(num % i === 0){
+                return false;
+            }
+        }
+        return true;
+    
 }
-console.log(isPalindrome(1210));
+console.log(isPrime(12));
