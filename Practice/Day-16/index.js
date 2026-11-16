@@ -54,16 +54,45 @@
 // console.log(isPalindrome(1210));
 
 // check the prime number 
+// function isPrime(num){
+//     if(num <=1){
+//         return false;
+//     }
+//         for(let i = 2; i <= Math.sqrt(num); i++){
+//             if(num % i === 0){
+//                 return false;
+//             }
+//         }
+//         return true;
+    
+// }
+// console.log(isPrime(12));
+
+
+
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
 function isPrime(num){
-    if(num <=1){
+    if(num <= 1){
         return false;
     }
-        for(let i = 2; i <= Math.sqrt(num); i++){
-            if(num % i === 0){
-                return false;
-            }
+    for(let i = 2; i <= Math.sqrt(num); i++){
+        if(num % i === 0){
+            return false;
         }
-        return true;
-    
+    }
 }
-console.log(isPrime(12));
+rl.question("Enter a number: ", function(input){
+    const num = Number(input);
+    if(isPrime(num)) {
+        console.log("prime number");
+    } else {
+        console.log("not a prime number");
+    }
+    rl.close();
+})
