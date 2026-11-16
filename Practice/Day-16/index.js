@@ -28,11 +28,27 @@
 // ]));
 
 // sum of all the numbers in an array ;
-function sumOfArray(arr){
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum += arr[i];
+// function sumOfArray(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum;
+// }
+// console.log(sumOfArray([10,394,5056,6706,1000,1]));
+
+// check the palindrome number
+function isPalindrome(num){
+    let orignal = num;
+    let reversed = 0;
+    while(num > 0){
+        let digit = num % 10;
+        reversed = reversed * 10 + digit;
+        num = Math.floor(num / 10);
+    }  
+    if(orignal === reversed){
+        return true;
     }
-    return sum;
+    return false;
 }
-console.log(sumOfArray([10,394,5056,6706,1000,1]));
+console.log(isPalindrome(1210));
