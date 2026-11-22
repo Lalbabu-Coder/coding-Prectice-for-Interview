@@ -25,11 +25,21 @@
 
 
 // find the sum of all numbers in an array
-function findSum(arr){
+// function findSum(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum; 
+// }
+// console.log(findSum([10,30,5,76,98,10]));
+
+// find the average of all numbers in an array
+function findAverage(arr){
     let sum = 0;
     for(let i = 0; i < arr.length; i++){
         sum += arr[i];
     }
-    return sum; 
+    return sum / arr.length;
 }
-console.log(findSum([10,30,5,76,98,10]));
+console.log(findAverage([10,30,50,40,10,40]));
