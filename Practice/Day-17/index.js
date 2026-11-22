@@ -35,11 +35,27 @@
 // console.log(findSum([10,30,5,76,98,10]));
 
 // find the average of all numbers in an array
-function findAverage(arr){
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum += arr[i];
+// function findAverage(arr){
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i];
+//     }
+//     return sum / arr.length;
+// }
+// console.log(findAverage([10,30,50,40,10,40]));
+
+// find the second largest number in an array
+function findSecondLargest(arr){
+    let largest = arr[0];
+    let secondLargest = arr[0];
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i] > largest){
+            largest = arr[i];
+        }
+        else if(arr[i] > secondLargest && arr[i] != largest){
+            secondLargest = arr[i];
+        }
     }
-    return sum / arr.length;
+    return secondLargest;
 }
-console.log(findAverage([10,30,50,40,10,40]));
+console.log(findSecondLargest([10,30,50,40,10,40]));
